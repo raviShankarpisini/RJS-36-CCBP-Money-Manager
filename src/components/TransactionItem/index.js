@@ -1,7 +1,7 @@
+import React from 'react'
 import './index.css'
 
-const TransactionItem = props => {
-  const {transactionDetails, deleteTransaction} = props
+const TransactionItem = ({transactionDetails, deleteTransaction}) => {
   const {id, title, amount, type} = transactionDetails
 
   const onDeleteTransaction = () => {
@@ -32,3 +32,4 @@ const TransactionItem = props => {
 }
 
 export default TransactionItem
+
